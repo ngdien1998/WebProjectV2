@@ -64,6 +64,6 @@ a:hover {
     color: #616161 !important;
 }
 
-.title, .left-title, .right-title, .right-info, .sanphammoi, .product-info, .title-detail, .price-detail {
+.title, .left-title,.right-title, .right-info, .sanphammoi, .product-info, .title-detail, .price-detail, .title-lien-he, .title-san-pham-khac{
     font-family: "blonde script";
 }
