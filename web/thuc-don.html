@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn nhà hàng</title>
+    <script type="text/javascript" src="assests/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assests/js/parallax.min.js"></script>
+    <script type="text/javascript" src="assests/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assests/js/script.thuc-don.js"></script>
+    <link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assests/css/style.thuc-don.css"/>
+    <link rel="stylesheet" type="text/css" href="assests/css/global.css"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg row" id="navbar-absolute">
+    <a class="navbar-brand font-blonde-script text-white font-size-h3" href="#">
+        <img src="assests/images/logo.png" width="50" height="50" class="d-inline-block align-top"
+             alt="logo">
+        Restaurant
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Trang chủ
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Thực đơn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Bài viết</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Nhà hàng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Đặt bàn</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Nhập thông tin tìm kiếm"
+                       id="txt-tim-kiem"/>
+                <div class="input-group-append">
+                    <input class="btn btn-info" type="submit" value="Tìm" id="btn-tim-kiem"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</nav>
+<nav class="my-breadcrumb parallax-window" data-parallax="scroll" data-image-src="assests/images/pabecue.png">
+    <li class="my-breadcrumb-item font-blonde-script"><a href="#">Trang chủ</a></li>
+    <li class="my-breadcrumb-item font-blonde-script my-breadcrumb-item-current">Thực đơn</li>
+</nav>
+<div class="top-menus">
+    <div class="top-menus-title">
+        <h1 class="font-blonde-script">Thực đơn hot trong tuần</h1>
+        <p><i>Các thực đơn bán chạy trong tuần với sức mua nhiều nhất</i></p>
+    </div>
+    <div class="top-menu-items container">
+        <div class="row">
+            <div class="top-menu-item col-3">
+                <a href="#!">
+                    <div class="menu-image">
+                        <img src="assests/images/banh-trang-cuon-thit-heo.jpg">
+                    </div>
+                    <div class="row">
+                        <p class="col-6 menu-name">Tên món ăn</p>
+                        <p class="col-6 menu-price">200 000đ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="top-menu-item col-3">
+                <a href="#!">
+                    <div class="menu-image">
+                        <img src="assests/images/banh-trang-cuon-thit-heo.jpg">
+                    </div>
+                    <div class="row">
+                        <p class="col-6 menu-name">Tên món ăn</p>
+                        <p class="col-6 menu-price">200 000đ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="top-menu-item col-3">
+                <a href="#!">
+                    <div class="menu-image">
+                        <img src="assests/images/banh-trang-cuon-thit-heo.jpg">
+                    </div>
+                    <div class="row">
+                        <p class="col-6 menu-name">Tên món ăn</p>
+                        <p class="col-6 menu-price">200 000đ</p>
+                    </div>
+                </a>
+            </div>
+            <div class="top-menu-item col-3">
+                <a href="#!">
+                    <div class="menu-image">
+                        <img src="assests/images/banh-trang-cuon-thit-heo.jpg">
+                    </div>
+                    <div class="row">
+                        <p class="col-6 menu-name">Tên món ăn</p>
+                        <p class="col-6 menu-price">200 000đ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
