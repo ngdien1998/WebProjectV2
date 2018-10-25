@@ -1,31 +1,40 @@
-.maincontent {
+.maincontent{
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.left-title {
+.left-title{
     border-bottom: 1px solid gainsboro;
     padding-bottom: 10px;
 }
 
-.left-margin li {
+.ml-65 {
+    margin-left: 65px;
+}
+
+.left-margin li{
     line-height: 40px;
     list-style-type: none;
     border-bottom: 1px dashed gainsboro;
 }
 
-.left-margin {
+.left-margin{
     margin-left: -40px;
     line-height: 40px;
 }
 
-.left-title, .right-title {
+.left-title, .right-title{
     font-size: 35px;
+}
+
+.right-content.col-12.col-md-9 {
+    padding-right: 0px;
 }
 
 .sanphammoi {
     font-size: 23px;
 }
+
 
 /* ----------------------------RIGHT CONTENT ---------------------------- */
 
@@ -33,21 +42,23 @@
     font-size: 26px;
 }
 
-.giagoc {
+.giagoc{
     font-size: 24px;
     color: red;
 }
 
-.giakm {
+.giakm{
     font-size: 17px;
     margin-left: 20px;
 }
 
 .tabfilter {
     display: inline-block;
-}
+    position: absolute;
+    top: 5px;
+ }
 
-.option.alert.alert-secondary {
+ .option.alert.alert-secondary {
     height: 50px;
-    padding-top: 2px;
+    padding-top: 5px;
 }
