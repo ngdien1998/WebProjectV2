@@ -53,10 +53,26 @@
 }
 
 .menu {
-    padding: 1.6rem 0.4rem;
+    padding: 0 0.4rem;
     margin-top: 2.8rem;
 }
 
-#menu-1 {
+#menu-1, #menu-2 {
     background: linear-gradient(to left, #fff, rgb(255, 255, 255), rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0)), url("../images/paralax2.png");
+}
+
+.food-menu, .menu-title {
+    margin: 1.6rem 0;
+}
+
+.menu-by-day {
+    padding: 2.8rem 0;
+}
+
+.food-image img {
+    width: 100%;
+}
+
+.menu-by-day-title {
+    padding: 1.8rem;
 }
