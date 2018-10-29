@@ -1,0 +1,64 @@
+.contact-bar {
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    font-size: 13px;
+}
+
+.contact-bar-functions {
+    text-align: right;
+}
+
+.contact-bar-functions a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 8px;
+}
+
+.top-content #navbar-absolute {
+    position: absolute;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    /*z-index: 1;*/
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.Title-parallax {
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 20px 0;
+
+}
+
+/*Head*/
+.table {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.table input {
+    text-align: center;
+}
+
+.table input.form-control {
+    width: 60%;
+}
+
+.set-color {
+    background-color: grey;
+}
+
+.border-radius {
+    border-radius: 10px;
+    border: solid 1px grey;
+}
+
+.color-for-table {
+    background-color: #D3D3D3;
+}
+
+.text-ali {
+    text-align: center;
+    position: absolute;
+}
