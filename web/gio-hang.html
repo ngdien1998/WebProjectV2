@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assests/css/style.gio-hang.css">
+    <script type="text/javascript" src="assests/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assests/js/parallax.min.js"></script>
+    <script type="text/javascript" src="assests/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assests/css/global.css"/>
+    <meta charset="UTF-8">
+    <title>Giỏ hàng</title>
+</head>
+
+<body>
+<div class="contact-bar row">
+    <div class="col-3 contact-bar-greeting">
+        <i>Hân hạnh được phục vụ quý khách</i>
+    </div>
+    <div class="col-9 contact-bar-functions">
+        <a href="#!"><i class="glyphicon glyphicon-shopping-cart"></i>Tài khoản
+        </a>
+        <a href="#!">Thanh toán</a>
+        <a href="#!">Giỏ hàng</a>
+    </div>
+</div>
+<div class="top-content">
+    <nav class="navbar navbar-expand-lg row" id="navbar-absolute">
+        <a class="navbar-brand font-blonde-script text-white font-size-h3" href="#">
+            <img src="assests/images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="logo">
+            Restaurant
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Trang chủ
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Thực đơn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Bài viết</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Nhà hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-blonde-script text-white font-size-h5" href="#">Đặt bàn</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Nhập thông tin tìm kiếm" id="txt-tim-kiem"/>
+                    <div class="input-group-append">
+                        <input class="btn btn-info" type="submit" value="Tìm" id="btn-tim-kiem"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+</div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="assests/images/gioi-thieu-top.png">
+
+    <div class="Title-parallax">
+        <h1 class="font-blonde-script">Giỏ hàng</h1>
+    </div>
+
+</div>
+<div class="container">
+    <table class="table font-blonde-script">
+        <thead class="thead-dark font-size-h5">
+        <tr>
+            <th scope="col">Sản phẩm</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Tổng tiền</th>
+        </tr>
+        </thead>
+        <tbody class="color-for-table">
+        <tr>
+            <th scope="row">Trà ô long</th>
+            <td>100.000 VNĐ</td>
+            <td>
+                <input type="number" value="1" class="border-radius">
+            </td>
+            <td>100.000 VNĐ</td>
+        </tr>
+        <tr>
+            <th scope="row">Hamburger</th>
+            <td>100.000 VNĐ</td>
+            <td>
+                <input type="number" value="1" class="border-radius">
+            </td>
+            <td>100.000 VNĐ</td>
+        </tr>
+        <tr>
+            <th scope="row">Bánh bao</th>
+            <td>100.000 VNĐ</td>
+            <td>
+                <input type="number" value="1" class="border-radius">
+            </td>
+            <td>100.000 VNĐ</td>
+        </tr>
+        <tr>
+            <th colspan="3" scope="row">
+                <form class="form-inline my-2 my-lg-0 col-8">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Mã Coupon">
+                    <button class="btn btn-outline-success" type="submit">Áp dụng Coupon</button>
+                </form>
+            </th>
+            <td>
+                <button class="btn btn-outline-success" type="submit">Cập nhật giỏ hàng</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6 font-blonde-script">
+            <h2>Tổng tiền</h2>
+            <table class="table font-blonde-script">
+                <thead>
+                <tr>
+                    <th scope="col" class="set-color">Subtotal</th>
+                    <th scope="col">300.000 VNĐ</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="col" class="set-color">Total</th>
+                    <td>300.000 VNĐ</td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-outline-success border-radius text-ali" type="submit">Thanh toán</button>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>

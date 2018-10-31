@@ -1,0 +1,115 @@
+.top-content img {
+    background-image: url("layout/assests/images/gioi-thieu-top.jpg")
+}
+
+.contact-bar {
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    font-size: 13px;
+}
+
+.contact-bar-functions {
+    text-align: right;
+}
+
+.contact-bar-functions a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 8px;
+}
+
+/*
+.slide-show {
+    position: relative;
+}*/
+.top-content #navbar-absolute {
+    position: absolute;
+    /*top: 0;*/
+    left: 0;
+    width: 100%;
+    /*z-index: 1;*/
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/*.parallax-window{
+    background: rgba(0, 0, 0, 0.5);
+}*/
+.Title-parallax {
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 20px 0;
+
+}
+
+.spaceeeee {
+    height: 60px;
+}
+
+.footer {
+    padding: 64px 0;
+    color: #fff;
+}
+
+.footer .row {
+    margin-top: 32px;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.send-contact form .form-row {
+    padding-bottom: 10px;
+}
+
+.send-contact form textarea {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.send-contact form input[type=text] {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.content-header {
+    margin-bottom: 32px;
+}
+
+.send-contact input[type = submit], .send-contact input[type = button] {
+    margin-top: 10px;
+}
+
+.table, tr {
+    border-top: none;
+    border-bottom: 1px solid;
+}
+
+.email-input input[type = text] {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.email-input input[type = submit] {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.footer-content *:not(h1) {
+    font-size: 14px;
+}
+
+.footer-content table td {
+    padding-left: 0;
+    padding-right: 0;
+    border: unset;
+}
