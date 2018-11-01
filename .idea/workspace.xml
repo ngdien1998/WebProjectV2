@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="947059ef-b44e-4e5d-b2a4-ccb9c06ab7b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/assests/css/style.thuc-don.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/assests/js/script.thuc-don.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/thuc-don.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/thuc-don.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,14 +109,33 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1918232638">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="66" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="66" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/thuc-don.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="112" column="10" lean-forward="true" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+            <state relative-caret-position="401">
+              <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -126,6 +143,15 @@
                 <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/dat-ban.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -199,6 +225,7 @@
         <option value="$PROJECT_DIR$/web/assests/js/script.thuc-don.js" />
         <option value="$PROJECT_DIR$/web/assests/css/style.thuc-don.css" />
         <option value="$PROJECT_DIR$/web/thuc-don.html" />
+        <option value="$PROJECT_DIR$/web/dat-ban.html" />
       </list>
     </option>
   </component>
@@ -228,30 +255,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="WebProjectV1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProjectV1" type="462c0819:PsiDirectoryNode" />
+              <item name="WebProjectV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProjectV2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="WebProjectV1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProjectV1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjectV1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProjectV1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjectV1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProjectV1" type="462c0819:PsiDirectoryNode" />
+              <item name="WebProjectV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProjectV2" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjectV2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProjectV2" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +287,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540429098302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540441187747" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -490,6 +513,7 @@
       <workItem from="1540205185201" duration="823000" />
       <workItem from="1540207424481" duration="10910000" />
       <workItem from="1540428952901" duration="511000" />
+      <workItem from="1540440195064" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="add new project">
       <created>1537877205003</created>
@@ -554,16 +578,30 @@
       <option name="project" value="LOCAL" />
       <updated>1540208332150</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="truongtrang-form-dat-ban">
+      <created>1540440358624</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1540440358625</updated>
+    </task>
+    <task id="LOCAL-00011" summary="truongtrang-commit-fordel-vendor">
+      <created>1540440996324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1540440996324</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97615000" />
+    <option name="totallyTimeSpent" value="98761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.23903178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49836066" visible="true" weight="0.24281392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -672,7 +710,9 @@
     <MESSAGE value="add some new files, modify note.txt" />
     <MESSAGE value="modify trang-chu.html" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="truongtrang-form-dat-ban" />
+    <MESSAGE value="truongtrang-commit-fordel-vendor" />
+    <option name="LAST_COMMIT_MESSAGE" value="truongtrang-commit-fordel-vendor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -744,23 +784,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar!/javax/servlet/ServletRequest.class" />
     <entry file="file://$PROJECT_DIR$/web/assests/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/LienHe.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="71" selection-start-column="71" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/LienHe.jsp" />
     <entry file="file://$PROJECT_DIR$/web/tin-tuc-blog.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -782,13 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/TatCaMonAn.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/TatCaMonAn.jsp" />
     <entry file="file://$PROJECT_DIR$/web/dang-ky.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1653">
@@ -799,13 +821,7 @@
     <entry file="file://$PROJECT_DIR$/web/note.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/ChiTietMonAn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="147" lean-forward="true" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ChiTietMonAn.html" />
     <entry file="file://$PROJECT_DIR$/src/quanlynhahang/controllers/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -846,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/thuc-don.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="112" column="10" lean-forward="true" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+        <state relative-caret-position="401">
+          <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -862,6 +878,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
           <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/dat-ban.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
         </state>
       </provider>
     </entry>
