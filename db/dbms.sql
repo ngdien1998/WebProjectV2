@@ -462,3 +462,499 @@ AS BEGIN
 	SELECT * FROM BaiViet
 	WHERE IDBaiViet = (SELECT TOP 1 IDBaiViet FROM @tblTemp)
 END
+-----------------------------------------------------THINH's ZONE-----------------------------------------------------------------------
+--------------------------------LOAI MON---------------------
+--view
+create view LoaiMonAn
+as select * from LoaiMon
+go
+--thêm
+CREATE PROC ThemMoiLoaiMon
+(
+	@idLoaiMon int,
+	@TenLoaiMon nVARCHAR(100),
+	@MoTa NVARCHAR(256)
+)
+AS
+BEGIN
+	INSERT INTO LoaiMon VALUES(@idLoaiMon, @TenLoaiMon, @MoTa)
+	SELECT * FROM LoaiMon
+END
+--xóa
+CREATE PROC XoaLoaiMon(@ID_LoaiMon INT)
+AS
+BEGIN
+	DECLARE @tblLoaiMon TABLE(IdLoaiMon INT, TenLoaiMon NVARCHAR(100), MoTa nVARCHAR(256))
+	INSERT INTO @tblLoaiMon SELECT * FROM LoaiMon WHERE IdLoaiMon = @ID_LoaiMon
+	DELETE FROM LoaiMon WHERE IdLoaiMon = @ID_LoaiMon
+	SELECT * FROM @tblLoaiMon
+END
+--sửa
+CREATE PROC SuaLoaiMon(@IdLoaiMon INT,
+						 @TenLoaiMon NVARCHAR(100) = NULL,
+						 @MoTa nVARCHAR(256) = NULL)
+AS
+BEGIN
+	DECLARE @tblLoaiMon TABLE (IDLoaiMon INT,
+								 TenLoaiMon NVARCHAR(100),
+								 MoTa NVARCHAR(256))
+	IF((SELECT COUNT(*) FROM LoaiMon WHERE IdLoaiMon = @IdLoaiMon) = 0)								 
+	BEGIN
+		RAISERROR(N'Loại món không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblLoaiMon SELECT * FROM LoaiMon WHERE IdLoaiMon = @IdLoaiMon
+		IF(@TenLoaiMon IS NULL)
+			SET @TenLoaiMon = (SELECT TenLoaiMon FROM @tblLoaiMon)
+		IF(@MoTa IS NULL)
+			SET @MoTa = (SELECT MoTa FROM @tblLoaiMon)
+		UPDATE LoaiMon 
+		SET IdLoaiMon = @IdLoaiMon,
+			TenLoaiMon = @TenLoaiMon,
+			MoTa = @MoTa
+	END
+	SELECT * FROM LoaiMon WHERE IdLoaiMon = @IdLoaiMon
+END
+-------------------------------Mon An----------------
+--view
+create view ViewMonAn
+as select * from MonAn
+go
+--thêm
+CREATE PROC ThemMoiMonAn
+(
+	@idMonAn int,
+	@TenMonAn nvarchar(50),
+	@DonViTinh nvarchar(50),
+	@MoTa NVARCHAR(256),
+	@Gia int,
+	@PhanTramKhuyenMai int,
+	@NgayThem datetime,
+	@idLoaiMonAn int,
+	@idThucDon int
+)
+AS
+BEGIN
+	INSERT INTO MonAn VALUES(@idMonAn, @TenMonAn, @DonViTinh , @MoTa , @Gia , @PhanTramKhuyenMai , @NgayThem, @idLoaiMonAn , @idThucDon)
+	SELECT * FROM MonAn
+END
+--xóa
+CREATE PROC XoaMonAn(@ID_MonAn INT)
+AS
+BEGIN
+	DECLARE @tblMonAn TABLE(IdMonAn int,
+	TenMonAn nvarchar(50),
+	DonViTinh nvarchar(50),
+	MoTa NVARCHAR(256),
+	Gia int,
+	PhanTramKhuyenMai int,
+	NgayThem datetime,
+	idLoaiMonAn int,
+	idThucDon int)
+	INSERT INTO @tblMonAn SELECT * FROM MonAn WHERE IDMonAn = @ID_MonAn
+	DELETE FROM LoaiMon WHERE IdLoaiMon = @ID_MonAn
+	SELECT * FROM @tblMonAn
+END
+--sửa
+CREATE PROC SuaMonAn(@IdMonAn INT,
+						 @TenMonAn NVARCHAR(50) = NULL,
+						 @DonViTinh nVARCHAR(50) = NULL,
+						 @MoTa nVARCHAR(256) = NULL,
+						 @Gia int=null,
+						 @PhanTramKhuyenMai int = NULL,
+	@NgayThem datetime = NULL,
+	@idLoaiMonAn int = NULL,
+	@idThucDon int = NULL)
+AS
+BEGIN
+	DECLARE @tblMonAn TABLE (IDMonAn int,
+	TenMonAn nvarchar(50),
+	DonViTinh nvarchar(50),
+	MoTa NVARCHAR(256),
+	Gia int,
+	PhanTramKhuyenMai int,
+	NgayThem datetime,
+	idLoaiMonAn int,
+	idThucDon int)
+	IF((SELECT COUNT(*) FROM MonAn WHERE IDMonAn = @IdMonAn) = 0)								 
+	BEGIN
+		RAISERROR(N' Món ăn không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblMonAn SELECT * FROM MonAn WHERE IDMonAn = @IdMonAn
+		IF(@TenMonAn IS NULL)
+			SET @TenMonAn = (SELECT TenMonAn FROM @tblMonAn)
+		IF(@DonViTinh IS NULL)
+			SET @DonViTinh = (SELECT DonViTinh FROM @tblMonAn)
+		IF(@MoTa IS NULL)
+			SET @MoTa = (SELECT MoTa FROM @tblMonAn)
+		IF(@Gia IS NULL)
+			SET @Gia = (SELECT Gia FROM @tblMonAn)
+		IF(@PhanTramKhuyenMai IS NULL)
+			SET @PhanTramKhuyenMai = (SELECT PhanTramKhuyenMai FROM @tblMonAn)
+		IF(@NgayThem IS NULL)
+			SET @NgayThem = (SELECT NgayThem FROM @tblMonAn)
+		IF(@idLoaiMonAn IS NULL)
+			SET @idLoaiMonAn = (SELECT idLoaiMonAn FROM @tblMonAn)
+		IF(@idThucDon IS NULL)
+			SET @idThucDon = (SELECT idThucDon FROM @tblMonAn)
+		UPDATE MonAn 
+		SET IDMonAn = @IdMonAn,
+			TenMonAn = @TenMonAn,
+			DonViTinh=@DonViTinh,
+			MoTa = @MoTa,
+			Gia=@Gia,
+			PhanTramKhuyenMai=@PhanTramKhuyenMai,
+			NgayThem=@NgayThem,
+			IDLoaiMonAn=@idLoaiMonAn,
+			IDThucDon=@idThucDon
+	END
+	SELECT * FROM MonAn WHERE IDMonAn = @IdMonAn
+END
+--------------------------------Ngiep vu quan tri-------------
+--view
+create view ViewNghiepVuQT
+as select * from NghiepVuQuanTri
+go
+--thêm
+CREATE PROC ThemNVQT
+(
+	@idNgiepVu varchar(50),
+	@TenNghiepVu nvarchar(100)
+	
+)
+AS
+BEGIN
+	INSERT INTO DatBan VALUES(@idNgiepVu, @TenNghiepVu)
+	SELECT * FROM NghiepVuQuanTri
+END
+--xóa
+CREATE PROC XoaNVQT(@idNgiepVu varchar(50))
+AS
+BEGIN
+	DECLARE @tblNVQT TABLE(IDNgiepVu varchar(50),
+	TenNghiepVu nvarchar(100))
+	INSERT INTO @tblNVQT SELECT * FROM NghiepVuQuanTri WHERE IDNghiepVu = @idNgiepVu
+	DELETE FROM NghiepVuQuanTri WHERE IDNghiepVu = @idNgiepVu
+	SELECT * FROM @tblNVQT
+END
+--sửa
+CREATE PROC SuaNVQT(@IDNgiepVu varchar(50),
+						 @TenNghiepVu NVARCHAR(50) = Null)
+AS
+BEGIN
+	DECLARE @tblNVQT TABLE (IDNghiepVu varchar(50),TenNghiepVu NVARCHAR(50))
+	IF((SELECT COUNT(*) FROM NghiepVuQuanTri WHERE IDNghiepVu = @IDNgiepVu) = 0)								 
+	BEGIN
+		RAISERROR(N' Nghiệp vụ không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblNVQT SELECT * FROM NghiepVuQuanTri WHERE IDNghiepVu = @IDNgiepVu
+		IF(@TenNghiepVu IS NULL)
+			SET @TenNghiepVu = (SELECT TenNghiepVu FROM @tblNVQT)
+		
+		UPDATE NghiepVuQuanTri
+		SET IDNghiepVu = @IDNgiepVu,
+			TenNghiepVu = @TenNghiepVu
+			
+	END
+	SELECT * FROM NghiepVuQuanTri WHERE IDNghiepVu = @IDNgiepVu
+END
+---------------------------------Nguoi dung---------------
+--view
+create view ViewNguoiDung
+as select * from NguoiDung
+go
+--thêm
+CREATE PROC ThemNguoiDung
+(
+	@Email varchar(50),
+	@MatKhau varchar(50),
+	@HoDem nvarchar(50),
+	@Ten NVARCHAR(256),
+	@NgaySinh date,
+	@Nu bit,
+	@Avatar nvarchar(100),
+	@DienThoai varchar(50),
+	@DiaChi nvarchar(256),
+	@LaQTV bit,
+	@KichHoat bit
+)
+AS
+BEGIN
+	INSERT INTO NguoiDung VALUES(@idMonAn, @TenMonAn, @DonViTinh , @MoTa , @Gia , @PhanTramKhuyenMai , @NgayThem, @idLoaiMonAn , @idThucDon)
+	SELECT * FROM NguoiDung
+END
+--xóa
+CREATE PROC XoaNguoiDung(@Email varchar(50))
+AS
+BEGIN
+	DECLARE @tblNguoiDung TABLE(Email varchar(50),
+	MatKhau varchar(50),
+	HoDem nvarchar(50),
+	Ten NVARCHAR(256),
+	NgaySinh date,
+	Nu bit,
+	Avatar nvarchar(100),
+	DienThoai varchar(50),
+	DiaChi nvarchar(256),
+	LaQTV bit,
+	KichHoat bit)
+	INSERT INTO @tblNguoiDung SELECT * FROM NguoiDung WHERE Email = @Email
+	DELETE FROM NguoiDung WHERE Email = @Email
+	SELECT * FROM @tblNguoiDung
+END
+--sửa
+CREATE PROC SuaNguoiDung(@Email varchar(50),
+	@MatKhau varchar(50),
+	@HoDem nvarchar(50),
+	@Ten NVARCHAR(256),
+	@NgaySinh date=null,
+	@Nu bit=null,
+	@Avatar nvarchar(100)=null,
+	@DienThoai varchar(50)=null,
+	@DiaChi nvarchar(256)=null,
+	@LaQTV bit,
+	@KichHoat bit)
+AS
+BEGIN
+	DECLARE @tblNguoiDung TABLE(Email varchar(50),
+	MatKhau varchar(50),
+	HoDem nvarchar(50),
+	Ten NVARCHAR(256),
+	NgaySinh date,
+	Nu bit,
+	Avatar nvarchar(100),
+	DienThoai varchar(50),
+	DiaChi nvarchar(256),
+	LaQTV bit,
+	KichHoat bit)
+	IF((SELECT COUNT(*) FROM NguoiDung WHERE Email = @Email) = 0)								 
+	BEGIN
+		RAISERROR(N' Người dùng không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblNguoiDung SELECT * FROM NguoiDung WHERE Email = @Email
+		IF(@MatKhau IS NULL)
+			SET @MatKhau = (SELECT MatKhau FROM @tblNguoiDung)
+		IF(@HoDem IS NULL)
+			SET @HoDem = (SELECT HoDem FROM @tblNguoiDung)
+		IF(@Ten IS NULL)
+			SET @Ten = (SELECT Ten FROM @tblNguoiDung)
+		IF(@NgaySinh IS NULL)
+			SET @NgaySinh = (SELECT NgaySinh FROM @tblNguoiDung)
+		IF(@Nu IS NULL)
+			SET @Nu = (SELECT Nu FROM @tblNguoiDung)
+		IF(@Avatar IS NULL)
+			SET @Avatar= (SELECT Avatar FROM @tblNguoiDung)
+		IF(@DienThoai IS NULL)
+			SET @DienThoai = (SELECT DienThoai FROM @tblNguoiDung)
+		IF(@DiaChi IS NULL)
+			SET @DiaChi = (SELECT DiaChi FROM @tblNguoiDung)
+		IF(@LaQTV IS NULL)
+			SET @LaQTV = (SELECT LaQTV FROM @tblNguoiDung)
+		IF(@KichHoat IS NULL)
+			SET @KichHoat = (SELECT KichHoat FROM @tblNguoiDung)
+		UPDATE NguoiDung
+		SET Email = @Email,
+			MatKhau=@MatKhau,
+			HoDem = @HoDem,
+			Ten=@Ten,
+			NgaySinh=@NgaySinh,
+			Nu=@Nu,
+			Avatar=@Avatar,
+			DienThoai=@DienThoai,
+			DiaChi=@DiaChi,
+			LaQTV=@LaQTV,
+			KichHoat=@KichHoat
+	END
+	SELECT * FROM NguoiDung WHERE Email = @Email
+END
+----------------------------Phan quyen----------------
+--view
+create view ViewPhanQuyen
+as select * from PhanQuyen
+go
+--thêm
+CREATE PROC ThemPhanQuyen
+(
+	@Email varchar(50),
+	@IDQuyen varchar(50),
+	@MoTa nvarchar(50)
+	
+)
+AS
+BEGIN
+	INSERT INTO PhanQuyen VALUES(@Email, @IDQuyen, @MoTa)
+	SELECT * FROM PhanQuyen
+END
+--xóa
+CREATE PROC XoaPhanQuyen(@Email varchar(50), @IDQuyen varchar(50))
+AS
+BEGIN
+	DECLARE @tblPhanQuyen TABLE(Email varchar(50),
+	IDQuyen varchar(50), MoTa nvarchar(50))
+	INSERT INTO @tblPhanQuyen SELECT * FROM PhanQuyen WHERE Email = @Email and IDQuyen=@IDQuyen
+	DELETE FROM PhanQuyen WHERE Email = @Email and IDQuyen=@IDQuyen
+	SELECT * FROM @tblPhanQuyen
+END
+--sửa
+CREATE PROC SuaPhanQuyen(@Email varchar(50), @IDQuyen varchar(50), @MoTa nvarchar(50)=null)
+AS
+BEGIN
+	DECLARE @tblPhanQuyen TABLE (Email varchar(50),IDQuyen VARCHAR(50), MoTa NvArChAr(50))
+	IF((SELECT COUNT(*) FROM PhanQuyen WHERE Email = @Email and IDQuyen=@IDQuyen) = 0)								 
+	BEGIN
+		RAISERROR(N' Phân quyền không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblPhanQuyen SELECT * FROM PhanQuyen WHERE Email = @Email and IDQuyen=@IDQuyen
+		IF(@MoTa IS NULL)
+			SET @MoTa = (SELECT MoTa FROM @tblPhanQuyen)
+		
+		UPDATE PhanQuyen
+		SET Email = @Email,
+			IDQuyen = @IDQuyen,
+			MoTa=@MoTa
+	END
+	SELECT * FROM PhanQuyen WHERE Email = @Email and IDQuyen=@IDQuyen
+END
+---------------------------------------Quyen--------------------
+--view
+create view ViewQuyen
+as select * from Quyen
+go
+--thêm
+CREATE PROC ThemQuyen
+(
+	@IDQuyen varchar(50),
+	@TenQuyen nvarchar(50),
+	@MoTa nvarchar(50),
+	@IDNghiepVu varchar(50)
+	
+)
+AS
+BEGIN
+	INSERT INTO Quyen VALUES(@IDQuyen,@TenQuyen, @MoTa,@IDNghiepVu)
+	SELECT * FROM Quyen
+END
+--xóa
+CREATE PROC XoaQuyen(@IDQuyen varchar(50))
+AS
+BEGIN
+	DECLARE @tblQuyen TABLE(IDQuyen varchar(50),TenQuyen nvarchar(50), MoTa nvarchar(50), IDNghiepVu varchar(50))
+	INSERT INTO @tblQuyen SELECT * FROM Quyen WHERE IDQuyen=@IDQuyen
+	DELETE FROM Quyen WHERE IDQuyen=@IDQuyen
+	SELECT * FROM @tblQuyen
+END
+--sửa
+CREATE PROC SuaQuyen(@IDQuyen varchar(50),
+	@TenQuyen nvarchar(50)=null,
+	@MoTa nvarchar(50)=null,
+	@IDNghiepVu varchar(50)=null)
+AS
+BEGIN
+	DECLARE @tblQuyen TABLE (IDQuyen VARCHAR(50), TenQuyen nvarchar(50),MoTa NvArChAr(50), IDNghiepVu varchar(50))
+	IF((SELECT COUNT(*) FROM Quyen WHERE IDQuyen=@IDQuyen) = 0)								 
+	BEGIN
+		RAISERROR(N' Quyền không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblQuyen SELECT * FROM Quyen WHERE IDQuyen=@IDQuyen
+		IF(@TenQuyen IS NULL)
+			SET @TenQuyen= (SELECT TenQuyen FROM @tblQuyen)
+		IF(@MoTa IS NULL)
+			SET @MoTa = (SELECT MoTa FROM @tblQuyen)
+		IF(@IDQuyen IS NULL)
+			SET @IDQuyen = (SELECT IDQuyen FROM @tblQuyen)
+		
+		UPDATE Quyen
+		SET 
+			IDQuyen = @IDQuyen,
+			TenQuyen=@TenQuyen,
+			MoTa=@MoTa,
+			IDNghiepVu=@IDNghiepVu
+	END
+	SELECT * FROM Quyen WHERE IDQuyen=@IDQuyen
+END
+-------------------------------------Thuc Don------------------------------------------
+--view
+create view ViewThucDon
+as select * from ThucDon
+go
+--thêm
+CREATE PROC ThemThucDon
+(
+	@IDThucDon int,
+	@TenThucDon nvarchar(50),
+	@MoTa nvarchar(255),
+	@Gia int,
+	@PhanTramKhuyenMai int,
+	@Thu int
+)
+AS
+BEGIN
+	INSERT INTO ThucDon VALUES(@IDThucDon,@TenThucDon,@MoTa,@Gia,@PhanTramKhuyenMai,@Thu)
+	SELECT * FROM ThucDon
+END
+--xóa
+CREATE PROC XoaThucDon(@IDThucDon int)
+AS
+BEGIN
+	DECLARE @tblThucDon TABLE(IDThucDon int,TenThucDon nvarchar(50), MoTa nvarchar(255), Gia int, PhanTramKhuyenMai int, Thu int)
+	INSERT INTO @tblThucDon SELECT * FROM ThucDon WHERE IDThucDon=@IDThucDon
+	DELETE FROM ThucDon WHERE IDThucDon=@IDThucDon
+	SELECT * FROM @tblThucDon
+END
+--sửa
+CREATE PROC SuaThucDOn(@IDThucDon int,
+	@TenThucDon nvarchar(50)=null,
+	@MoTa nvarchar(255)=null,
+	@Gia int=null,
+	@PhanTramKhuyenMai int=null,
+	@Thu int=null)
+AS
+BEGIN
+	DECLARE @tblThucDon TABLE (IDThucDon int, TenThucDon nvarchar(50),MoTa NvArChAr(255), Gia int, PhanTramKhuyenMai int, Thu int)
+	IF((SELECT COUNT(*) FROM ThucDon WHERE IDThucDon=@IDThucDon) = 0)								 
+	BEGIN
+		RAISERROR(N' Thực đơn không tồn tại',16,1);
+		RETURN
+	END
+	ELSE
+	BEGIN
+		INSERT INTO @tblThucDon SELECT * FROM Quyen WHERE @IDThucDon=@IDThucDon
+		IF(@TenThucDon IS NULL)
+			SET @TenThucDon= (SELECT TenThucDon FROM @tblThucDon)
+		IF(@MoTa IS NULL)
+			SET @MoTa = (SELECT MoTa FROM @tblThucDon)
+		IF(@Gia IS NULL)
+			SET @Gia = (SELECT Gia FROM @tblThucDon)
+		IF(@PhanTramKhuyenMai IS NULL)
+			SET @PhanTramKhuyenMai = (SELECT PhanTramKhuyenMai FROM @tblThucDon)
+		IF(@Gia IS NULL)
+			SET @Thu = (SELECT Thu FROM @tblThucDon)
+		
+		UPDATE ThucDon
+		SET 
+			IDThucDon = @IDThucDon,
+			TenThucDon=@TenThucDon,
+			MoTa=@MoTa,
+			Gia=@Gia,
+			PhanTramKhuyenMai=@PhanTramKhuyenMai,
+			Thu=@Thu
+	END
+	SELECT * FROM ThucDon WHERE IDThucDon=@IDThucDon
+END
