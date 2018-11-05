@@ -650,7 +650,7 @@ BEGIN
 	DECLARE @tblNVQT TABLE (IDNghiepVu varchar(50),TenNghiepVu NVARCHAR(50))
 	IF((SELECT COUNT(*) FROM NghiepVuQuanTri WHERE IDNghiepVu = @IDNgiepVu) = 0)								 
 	BEGIN
-		RAISERROR(N' Nghiệp vụ không tồn tại',16,1);
+		RAISERROR(N'Nghiệp vụ không tồn tại',16,1);
 		RETURN
 	END
 	ELSE
@@ -930,7 +930,7 @@ BEGIN
 	DECLARE @tblThucDon TABLE (IDThucDon int, TenThucDon nvarchar(50),MoTa NvArChAr(255), Gia int, PhanTramKhuyenMai int, Thu int)
 	IF((SELECT COUNT(*) FROM ThucDon WHERE IDThucDon=@IDThucDon) = 0)								 
 	BEGIN
-		RAISERROR(N' Thực đơn không tồn tại',16,1);
+		RAISERROR(N'Thực đơn không tồn tại',16,1);
 		RETURN
 	END
 	ELSE
