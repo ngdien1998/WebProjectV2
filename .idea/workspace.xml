@@ -6,7 +6,77 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="947059ef-b44e-4e5d-b2a4-ccb9c06ab7b7" name="Default Changelist" comment="" />
+    <list default="true" id="947059ef-b44e-4e5d-b2a4-ccb9c06ab7b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/ChiTietMonAn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/LienHe.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/TatCaMonAn.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/WEB-INF/classes/quanlynhahang/controllers/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/style.chi-tiet-mon-an.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/style.dang-nhap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/style.lien-he.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/style.tat-ca-mon-an.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/style.tin-tuc-blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/css/style.trang-chu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/fonts/FS BlondeScript-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/2Restoran.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/Trua-Nay-An-Gi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banh-trang-cuon-thit-heo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banh-xeo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banner2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banner3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banner4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/banner5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/beverages-brunch-cocktail-5317.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/blur-breakfast-close-up-376464.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/blur-close-up-cutlery-370984.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/bun-mam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/burrito-chicken-close-up-461198.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/close-up-cooking-cuisine-958545.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/cua-rang-me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/dinner-food-meal-8313.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/monan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/pabecue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/paralax2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/images/people.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/script.dang-nhap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/assests/js/script.trang-chu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/dang-ky.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/dang-nhap.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/note.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/tin-tuc-blog.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WebProjectV1_war_exploded/trang-chu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +196,30 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1640243949">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="jsp" value="3" />
+          <entry key="sql" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSP" value="3" />
+          <entry key="SQL" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="11" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf />
@@ -189,6 +283,8 @@
         <option value="$PROJECT_DIR$/web/assests/css/style.thuc-don.css" />
         <option value="$PROJECT_DIR$/web/thuc-don.html" />
         <option value="$PROJECT_DIR$/web/dat-ban.html" />
+        <option value="$PROJECT_DIR$/db/dbms.sql" />
+        <option value="$PROJECT_DIR$/../WebProjectV3/web/dang-ky.jsp" />
       </list>
     </option>
   </component>
@@ -226,11 +322,6 @@
               <item name="WebProjectV2" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebProjectV2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WebProjectV2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProjectV2" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -267,6 +358,117 @@
       <recent name="E:\JSP Servlet\WebProjectV1\web\assests\css" />
       <recent name="E:\JSP Servlet\WebProjectV1\web\assests\images" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/db/QuanLyNhaHang_2.mdf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/db/QuanLyNhaHang_2_log.ldf</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -549,11 +751,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540440996324</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="dien commit">
+      <created>1541399066936</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541399066936</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98917000" />
+    <option name="totallyTimeSpent" value="100642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -567,7 +776,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" sideWeight="0.50163937" side_tool="true" weight="0.2246596" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -669,7 +878,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="truongtrang-form-dat-ban" />
     <MESSAGE value="truongtrang-commit-fordel-vendor" />
-    <option name="LAST_COMMIT_MESSAGE" value="truongtrang-commit-fordel-vendor" />
+    <MESSAGE value="dien commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="dien commit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -689,13 +899,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assests/js/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/layout/note.txt" />
     <entry file="file://$PROJECT_DIR$/web/abc.txt" />
@@ -833,6 +1036,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../WebProjectV3/web/dang-ky.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/dbms.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3850">
+          <caret line="652" column="16" selection-start-line="652" selection-start-column="16" selection-end-line="652" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
