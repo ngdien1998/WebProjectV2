@@ -1,57 +1,68 @@
-.LeftHeader1{
+.LeftHeader1 {
     width: 350px;
     color: black;
 }
-#RightHeader1{
+
+#RightHeader1 {
     color: black;
     padding: 1px;
 }
-.RightContent{
+
+.RightContent {
     float: right;
     width: calc(100% - 450px);
 }
-.LeftContent{
+
+.LeftContent {
     float: left;
     width: 350px;
     padding-left: 80px;
 }
-#TrangChu{
+
+#TrangChu {
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid gray;
     height: 25px;
     margin: 10px 0px 0px 0px;
 }
-#ThucDon{
+
+#ThucDon {
     padding: 0;
     border-bottom: 1px solid gray;
     height: 25px;
     margin: 10px 0px 0px 0px;
 }
-#Tintuc-sukien{
+
+#Tintuc-sukien {
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid gray;
     height: 25px;
     margin: 10px 0px 0px 0px;
 }
-#GioiThieu{
+
+#GioiThieu {
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid gray;
     height: 25px;
     margin: 10px 0px 0px 0px;
 }
-#Lienhe{
+
+#Lienhe {
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid gray;
     height: 25px;
     margin: 10px 0px 0px 0px;
 }
-#News{
+
+#News {
     margin: 20px 20px 20px 0px;
 }
-.NewsImg{
+
+.NewsImg {
     width: 100%;
     /* margin: 10px; */
 }
+
 /*.NewsStr{
     width: calc(100% - 100px - 20px) ;
 }
@@ -59,12 +70,14 @@
 .clearfix {
     clear: both;
 }
-.NewsImagine{
-    float:left ;
+
+.NewsImagine {
+    float: left;
     width: 250px;
     margin: 20px;
 }
-.NewsInfor{
+
+.NewsInfor {
     float: right;
     width: calc(100% - 250px - 40px);
 }

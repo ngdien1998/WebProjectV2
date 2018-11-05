@@ -33,7 +33,8 @@
                        placeholder="Nhập mật khẩu vào đây" name="password">
                 <small class="text-danger" id="validate-pass"></small>
                 <small id="passwordHelp" class="form-text text-muted">Mật khẩu phải dài hơn 8 ký tự, chứa chữ hoa,
-                thường và ký tự đặt biệt</small>
+                    thường và ký tự đặt biệt
+                </small>
             </div>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
